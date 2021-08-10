@@ -36,7 +36,7 @@ import json
 
 def getScore(username, password):
     data = {'username': username, 'password': password, 'year': 2020, 'term': 12}
-    url = "https://py.lqb666.cn/grade"
+    url = "教务系统接口"
     res = requests.post(url, data)
     res = res.text
     res = json.loads(res)
@@ -54,7 +54,7 @@ def getScore(username, password):
 
 def getclass(username, password):
     data = {'username': username, 'password': password, 'year': 2020, 'term': 12}
-    url = "https://py.lqb666.cn/curriculum"
+    url = "教务系统接口"
     res = requests.post(url, data)
     res = res.text
     res = json.loads(res)
@@ -74,7 +74,7 @@ def getclass(username, password):
 
 
 def test_download():
-    cap = cv2.VideoCapture("http://[2409:8a6c:51c:a540:acca:734a:6030:77b4]:5000/video_feed")
+    cap = cv2.VideoCapture("http://[ipv6]:5000/video_feed")
     # cap = cv2.VideoCapture("rtsp://admin:12345@192.168.1.64/main/Channels/1")
     # fourcc = cv2.VideoWriter_fourcc(*'XVID')
     frame_s = cap.get(5)
