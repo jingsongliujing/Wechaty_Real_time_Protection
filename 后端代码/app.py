@@ -32,4 +32,4 @@ def video_feed():
 
 
 if __name__ == '__main__':
-    app.run(host='2409:8a6c:51c:a540:acca:734a:6030', debug=True, threaded=True)  #默认是0.0.0.0，改成ipv6地址就可以远程访问，不用局限于家庭内网了
+    app.run(host='ipv6', debug=True, threaded=True)  #默认是0.0.0.0，改成ipv6地址就可以远程访问，不用局限于家庭内网了
